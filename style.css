@@ -13,11 +13,12 @@ body {
 
 .nav-desktop {
     width: 100%;
-    height: 50px;
+    height: 70px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
+    border-bottom: 1px solid #889280;
 }
 
 .name {
@@ -50,14 +51,37 @@ body {
     border: solid #64FFDA 3px;
     display: inline-block;
     padding: 4px;
+    text-decoration: none;
    
 }
 
 .nav-mobile {
     display: none;
 }
+.intro {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: 50px;
+    margin-top: 20px;
+    padding-left: 15px;
+}
 
+.nama {
+    color: #CCD6F6;
+    font-size: 40px;
+}
 
+.quote {
+    color: #8892B0;
+    font-size: 25px;
+}
+.info {
+    text-align: justify;
+}
+.resume:hover {
+    background-color: #8892B0;
+}
 
 /* resvonsive */
 
@@ -74,6 +98,7 @@ body {
         box-sizing: border-box;
         padding: 15px;
         align-items: center;
+        border-bottom: 1px solid #889280;
     }
     .nav-btn {
         display: inline-block;
