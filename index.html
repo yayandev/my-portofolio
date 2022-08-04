@@ -15,12 +15,12 @@
         <h1 class="name">Yanz porto</h1>
         <ul class="nav-item-desktop">
             <li>
-                <a href="" class="nav-item">
+                <a href="#about" class="nav-item" onclick="animateAbout();">
                     <span class="number">1.</span>About
                 </a>
             </li>
             <li>
-                <a href="" class="nav-item">
+                <a href="#certificate" class="nav-item" onclick="animateCertificate();">
                     <span class="number">2.</span>Certificate
                 </a>
             </li>
@@ -48,17 +48,18 @@
         <button class="nav-btn" id="btn-nav" onclick="openSideBar();">
             =
         </button>
-        <button class="nav-btn" style="display: none;" id="close-nav" onclick="closeSideBar();">x</button>
+        
     </nav>
     <div class="sidebar" style="display: none;" id="side-bar">
+        <button class="close-btn" style="display: none;" id="close-nav" onclick="closeSideBar();">x</button>
         <ul class="nav-list">
             <li>
-                <a href="" class="nav-item p-20">
-                    <span class="number">1.</span>About
+                <a href="#about" class="nav-item p-20" onclick="animateAbout();">
+                    <span class="number" >1.</span>About
                 </a>
             </li>
             <li>
-                <a href="" class="nav-item p-20">
+                <a href="#certificate" class="nav-item p-20" onclick="animateCertificate();">
                     <span class="number">2.</span>Certificate
                 </a>
             </li>
@@ -89,11 +90,80 @@
         <h1 class="nama">Yayan Fathurohman</h1>
         <br>
         <p class="quote">Saya seorang <span class="number">Programmer</span> web develovment</p>
+       
         <br>
         <p class="info">Saya senang sekali akan dunia programming web, <br> selain suka coding saya juga suka sekali membuat desain web. <br><br>
+            <div class="information">
+                <marquee behavior="" direction="">klik Dibawah untuk Lihat Project saya</marquee>
+              </div>
         <a href="" class="resume">Project Saya</a></p>
       </div>
       <!-- end intro -->
+
+
+      <!-- start about -->
+      <div class="about" id="about" style="animation: none;">
+        <div class="biodata">
+            <h1 class="content" >1.About <div class="garis"></div></h1>
+            <p class="info">Hai perkenalkan nama saya yayan fathurohman sering dipanggil yanz. Saya seorang programming web develovment sejak tahun 2021, Saya sangat senang sekali dengan dunia web programming selain suka coding saya juga suka sekali dengan web desain.</p>
+            <br>
+            <p class="info">
+                Saya seorang yang haus akan ilmu, karna saya sadar bahwa dunia ini gelap dan ilmu adalah cahaya.
+                maka dari itu mencari ilmu sangat lah peting sampai mati saya akan tetap mencari ilmu.
+                seperti pepatah mengatakan, "Cari lah ilmu sampai ke Negri cina".
+            </p>
+            <br>
+            <P>
+                Skill yang saya kuasai saat ini di dunia web programming diantaranya.
+                <ol style="padding-left: 29px;">
+                    <li>HTML 90%</li>
+                    <li>CSS 90%</li>
+                    <li>Javascript 80%</li>
+                    <li>PHP 80%</li>
+                    <li>Bootstrap 80%</li>
+                </ol>
+            </P>
+        </div>
+        <div class="foto">
+            <marquee behavior="" direction="" class="number">Download resume saya jika ingin mengetahui saya lebih lanjut.</marquee>
+            <a href="resume/mycv.pdf" class="nav-item p-20">
+                <div class="resume" >Download CV</div>
+            </a>
+        </div>
+      </div>
+      <!-- end about -->
+
+      <!-- start certificate -->
+      <div class="certificate" id="certificate" style="animation: none;">
+        <h1 class="content" >2.Certificate <div class="garis"></div></h1>
+        <br>
+        <ul style="list-style: none;">
+            <li>
+                <p><span class="number">1.</span>Belajar dasar pemerogramman web <a href="img/certificate1.png" class="resume">View</a></p>
+                <br>
+                <img src="img/certificate1.png" alt="" width="70%" style="border-radius: 10px; box-shadow: 3px 3px 3px grey;">    
+            </li>
+            <br>
+            <li>
+                <p><span class="number">2.</span>Belajar Membuat Front end web <a href="img/sertificate2.png" class="resume">View</a></p>
+                <br>
+                <img src="img/sertificate2.png" alt="" width="70%" style="border-radius: 10px; box-shadow: 3px 3px 3px grey;">
+            </li>
+            <br>
+            <li>
+                <p><span class="number">3.</span>Belajar Membuat Front end web <a href="img/certificate3.png" class="resume">View</a></p>
+                <br>
+                <img src="img/certificate3.png" alt="" width="70%" style="border-radius: 10px; box-shadow: 3px 3px 3px grey;">
+            </li>
+            <br>
+            <li>
+                <p><span class="number">4.</span>Belajar Membuat Aplikasi Back end <a href="img/certificate3.png" class="resume">View</a></p>
+                <br>
+                <img src="img/certificate4.png" alt="" width="70%" style="border-radius: 10px; box-shadow: 3px 3px 3px grey;">
+            </li>
+        </ul>
+      </div>
+      <!-- end certificate -->
       <script src="script.js"></script>
 </body>
 </html>

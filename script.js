@@ -1,3 +1,4 @@
+// start navbar
 function openSideBar() {
     let sidebar = document.getElementById("side-bar");
     let btnOpen = document.getElementById("btn-nav");
@@ -17,3 +18,17 @@ function closeSideBar() {
     btnClose.setAttribute("style", "display:none;");
     btnOpen.setAttribute("style", "");
 }
+
+// end navbar
+
+
+function animateAbout() {
+    let about = document.getElementById("about");
+    about.setAttribute("style", "");
+ }
+
+
+ function animateCertificate() {
+    let certificate = document.getElementById("certificate");
+    certificate.setAttribute("style", "");
+ }

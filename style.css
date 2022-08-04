@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +14,7 @@ body {
 
 
 .nav-desktop {
+    top: 0;
     width: 100%;
     height: 70px;
     display: flex;
@@ -19,6 +22,9 @@ body {
     align-items: center;
     box-sizing: border-box;
     border-bottom: 1px solid #889280;
+    position: fixed;
+    background-color: #112240;
+    z-index: 9999;
 }
 
 .name {
@@ -52,6 +58,7 @@ body {
     display: inline-block;
     padding: 4px;
     text-decoration: none;
+    border-radius: 5px;
    
 }
 
@@ -63,8 +70,10 @@ body {
     height: auto;
     margin: auto;
     padding-top: 50px;
-    margin-top: 20px;
+    margin-top: 60px;
     padding-left: 15px;
+    animation: 2s move;
+    position: relative;
 }
 
 .nama {
@@ -83,6 +92,87 @@ body {
     background-color: #8892B0;
 }
 
+.garis {
+    width: 100px;
+    height: 4px;
+    background-color: #8892B0;
+    margin-top: 30px;
+}
+
+.information {
+    width: 300px;
+    height: 30px;
+}
+
+.content {
+    color: #CCD6F6;
+    font-size: 40px;
+    display: flex;
+}
+
+.about {
+    width: 80%;
+    margin: 280px 10%;
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    animation: 2s move;
+}
+
+
+.biodata {
+    width: 70%;
+}
+
+.foto {
+    width: 20%;
+    height: 250px;
+    border-radius: 20px;
+    background-image: url(img/foto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foto:hover {
+    box-shadow: 3px 3px 3px grey;
+    height: 300px;
+}
+
+.certificate {
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    animation: 1s move;
+    position: relative;
+}
+
+
+/* animasi */
+@keyframes move {
+    from {
+        left: -120%;
+    }
+    to {
+        left: 0%;
+    }
+  }
+
+  @keyframes nav {
+        from {
+            right: -100%;
+        }
+        to {
+            right: 0%;
+        }
+  }
 /* resvonsive */
 
 @media screen and (max-width:1075px) {
@@ -99,6 +189,11 @@ body {
         padding: 15px;
         align-items: center;
         border-bottom: 1px solid #889280;
+        background-color: #112240;
+        top: 0;
+        position: fixed;
+        z-index: 90;
+        
     }
     .nav-btn {
         display: inline-block;
@@ -106,16 +201,31 @@ body {
         background-color: transparent;
         color: #64FFDA;
         font-size: 35px;
-        z-index: 999;
+        z-index: 9999;
+    }
+
+    .close-btn {
+        display: inline-block;
+        border: none;
+        background-color: transparent;
+        color: #64FFDA;
+        font-size: 35px;
+        z-index: 9999;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px;
     }
 
     .sidebar {
         width: 80%;
         height: 100%;
         background-color: #112240;
-        position: absolute;
         top: 0;
         right: 0;
+        position: fixed;
+        z-index: 9999;
+        animation: 0.5s nav;
         
     }
 
@@ -129,5 +239,24 @@ body {
     .p-20 {
         display: inline-block;
         padding: 20px;
+    }
+
+    .about {
+        display: block;
+        margin-top: 200px;
+    }
+
+    .biodata {
+        width: 100%;
+        
+    }
+
+    .foto {
+        width: 100%;
+        height: 300px;
+    }
+
+    .certificate {
+        width: 100%;
     }
 }
