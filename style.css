@@ -152,6 +152,14 @@ body {
     position: relative;
 }
 
+.contact {
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 100px;
+}
+
 
 /* animasi */
 @keyframes move {
