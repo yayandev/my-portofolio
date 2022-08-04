@@ -33,3 +33,9 @@ function animateAbout() {
     certificate.setAttribute("style", "");
  }
 
+
+ function animateContact() {
+    let contact = document.getElementById("contact");
+    contact.setAttribute("style", "none");
+ }
+

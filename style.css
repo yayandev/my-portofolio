@@ -154,11 +154,13 @@ body {
 
 .contact {
     width: 80%;
-    margin: auto;
+    margin: 100px 10%;
     box-sizing: border-box;
     padding: 10px;
-    margin-top: 100px;
     text-align: left;
+    position: relative;
+    animation: 2s move;
+    
 }
 
 
