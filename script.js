@@ -32,3 +32,4 @@ function animateAbout() {
     let certificate = document.getElementById("certificate");
     certificate.setAttribute("style", "");
  }
+

@@ -70,10 +70,8 @@ body {
     height: auto;
     margin: auto;
     padding-top: 50px;
-    margin-top: 60px;
+    margin-top: 80px;
     padding-left: 15px;
-    animation: 2s move;
-    position: relative;
 }
 
 .nama {
