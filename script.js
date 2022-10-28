@@ -22,20 +22,3 @@ function closeSideBar() {
 // end navbar
 
 
-function animateAbout() {
-    let about = document.getElementById("about");
-    about.setAttribute("style", "");
- }
-
-
- function animateCertificate() {
-    let certificate = document.getElementById("certificate");
-    certificate.setAttribute("style", "");
- }
-
-
- function animateContact() {
-    let contact = document.getElementById("contact");
-    contact.setAttribute("style", "none");
- }
-

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yanz porto</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="animate.css">
 </head>
@@ -47,7 +48,9 @@
     <nav class="nav-mobile">
         <h1 class="name animate__animated animate__bounce">Yanz porto</h1>
         <button class="nav-btn" id="btn-nav" onclick="openSideBar();">
-            =
+            <div></div>
+            <div></div>
+            <div></div>
         </button>
         
     </nav>
@@ -55,18 +58,18 @@
         <button class="close-btn" style="display: none;" id="close-nav" onclick="closeSideBar();">x</button>
         <ul class="nav-list">
             <li>
-                <a href="#about" class="nav-item p-20" onclick="animateAbout();">
+                <a href="#about" class="nav-item p-20">
                     <span class="number" >1.</span>About
                 </a>
             </li>
             <li>
-                <a href="#certificate" class="nav-item p-20" onclick="animateCertificate();">
+                <a href="#certificate" class="nav-item p-20">
                     <span class="number">2.</span>Certificate
                 </a>
             </li>
             <li>
                 <a href="#contact" class="nav-item p-20">
-                    <span class="number"  onclick="animateContact();">3.</span>Contact
+                    <span class="number">3.</span>Contact
                 </a>
             </li>
             <li>
@@ -85,7 +88,7 @@
       <!-- end navbar -->
 
       <!-- start intro -->
-      <div class="intro animate__animated animate__backInLeft">
+      <div class="intro"  data-aos="fade-down">
         <p class="number">Hai, Nama Saya</p>
         <br>
         <h1 class="nama">Yayan Fathurohman</h1>
@@ -103,8 +106,8 @@
 
 
       <!-- start about -->
-      <div class="about" id="about" style="animation: none;">
-        <div class="biodata">
+      <div class="about"  id="about" style="animation: none;">
+        <div class="biodata" data-aos="fade-left">
             <h1 class="content" >1.About <div class="garis"></div></h1>
             <p class="info">Hai perkenalkan nama saya yayan fathurohman sering dipanggil yanz. Saya seorang programming web develovment sejak tahun 2021, Saya sangat senang sekali dengan dunia web programming selain suka coding saya juga suka sekali dengan web desain.</p>
             <br>
@@ -121,11 +124,12 @@
                     <li>CSS 90%</li>
                     <li>Javascript 80%</li>
                     <li>PHP 80%</li>
+                    <li>C++ 65%</li>
                     <li>Bootstrap 80%</li>
                 </ol>
             </P>
         </div>
-        <div class="foto animate__animated animate__rotateIn">
+        <div class="foto" data-aos="fade-right">
             <marquee behavior="" direction="" class="number">Download resume saya jika ingin mengetahui saya lebih lanjut.</marquee>
             <a href="resume/mycv.pdf" class="nav-item p-20">
                 <div class="resume" >Download CV</div>
@@ -136,10 +140,10 @@
 
       <!-- start certificate -->
       <div class="certificate" id="certificate" style="animation: none;">
-        <h1 class="content" >2.Certificate <div class="garis"></div></h1>
+        <h1 class="content" data-aos="zoom-in">2.Certificate <div class="garis"></div></h1>
         <br>
         <ul style="list-style: none;">
-            <li>
+            <li data-aos="flip-left">
                 <p><span class="number">1.</span>Belajar dasar pemerogramman web </p>
                 <br>
                 <img src="img/certificate1.png" alt="" width="70%" style="border-radius: 10px; box-shadow: 3px 3px 3px grey;">
@@ -147,7 +151,7 @@
                 <a href="img/certificate1.png" class="resume">View</a>    
             </li>
             <br>
-            <li>
+            <li data-aos="flip-right">
                 <p><span class="number">2.</span>Belajar Membuat Front end web </p>
                 <br>
                 <img src="img/sertificate2.png" alt="" width="70%" style="border-radius: 10px; box-shadow: 3px 3px 3px grey;">
@@ -155,7 +159,7 @@
                 <a href="img/sertificate2.png" class="resume">View</a>   
             </li>
             <br>
-            <li>
+            <li data-aos="flip-left">
                 <p><span class="number">3.</span>Belajar Membuat Front end web </p>
                 <br>
                 <img src="img/certificate3.png" alt="" width="70%" style="border-radius: 10px; box-shadow: 3px 3px 3px grey;">
@@ -163,7 +167,7 @@
                 <a href="img/certificate3.png" class="resume">View</a>
             </li>
             <br>
-            <li>
+            <li data-aos="flip-right">
                 <p><span class="number">4.</span>Belajar Membuat Aplikasi Back end </p>
                 <br>
                 <img src="img/certificate4.png" alt="" width="70%" style="border-radius: 10px; box-shadow: 3px 3px 3px grey;">
@@ -175,7 +179,7 @@
       <!-- end certificate -->
 
       <!-- start contact -->
-      <div class="contact" id="contact" style="animation: none;">
+      <div class="contact" id="contact" data-aos="zoom-in">
         <h1 class="content" >3.Contact <div class="garis"></div></h1>
         <br>
         <p class="information">Klik dibawah untuk menghubungi saya!!!</p>
@@ -183,6 +187,10 @@
         <a href="mailto:yayanfathurohman20@gmail.com" class="resume">Contact me</a>
       </div>
       <!-- end contact -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
       <script src="script.js"></script>
 
 
